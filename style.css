@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#cabecalho {
+    text-align: center;
+    padding: 20px;
+    background-color: #893ce0;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header {
+    border-bottom: 2px solid #893ce0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.titulo {
+    font-size: 1.8em;
+    color: #893ce0;
+}
+
+#textoSuperior {
+    margin-bottom: 20px;
+}
+
+.subtitulo {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border: 1px solid #893ce0;
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+#cambio {
+    display: flex;
+    gap: 20px;
+}
+
+#opcionais {
+    display: flex;
+    flex-direction: column;
+}
+
+.opcionais-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opcional-col {
+    flex: 1;
+    margin-right: 20px; /* Espaço entre as colunas */
+}
+
+.opcional-col:last-child {
+    margin-right: 0; /* Remove a margem do lado direito da última coluna */
+}
+
+.opcional-col div {
+    margin-bottom: 10px; /* Espaço entre os checkboxes */
+}
+
+/* Estilo adicional para melhorar a aparência geral */
+h3.subtitulo {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer; /* Muda o cursor ao passar sobre os checkboxes */
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: #893ce0;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #7b30c5;
+}
+
+@media (max-width: 600px) {
+    #cabecalho {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    input[type="submit"] {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
